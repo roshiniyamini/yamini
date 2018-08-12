@@ -8,15 +8,17 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		Scanner s=new Scanner(System.in);
-		int num=s.nextInt();
-		int reversenum=0;
-		while(num!=0)
-		{
-			reversenum=reversenum*10;
-			reversenum=reversenum+num%10;
-			num=num/10;
-		}
-		System.out.println(reversenum);
-	}
+		 int num, rev=0, rem;
+        Scanner scan = new Scanner(System.in);
+        num = scan.nextInt();
+		
+        while(num != 0)
+        {
+            rem = num%10;
+            rev = rev*10 + rem;
+            num = num/10;
+        }
+		
+        System.out.print(rev);
+    }
 }
