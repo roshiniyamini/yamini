@@ -8,15 +8,15 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 	       Scanner s=new Scanner(System.in);
-	       int n=s.nextInt();
+	       int N=s.nextInt();
 	       int K=s.nextInt();
 	       boolean flag=false;
 	       int a[]=new int[10];
-	       for(int i=0;i<n;i++)
+	       for(int i=0;i<N;i++)
 	       {
 	       	 a[i]=s.nextInt();
 	       }
-	       for(int i=0;i<n;i++)
+	       for(int i=0;i<N;i++)
 	       {
 	         if(a[i]==K)	
                      {
